@@ -357,8 +357,8 @@
         <section>
             <div class="container mx-auto lg:px-24 px-8 my-8">
                 <div
-                    class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(images/banner1.png)] bg-center bg-cover h-[70vh] flex items-center justify-center">
-                    <div>
+                    class="carousel-item rounded-lg relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(images/banner1.png)] bg-center bg-cover h-fit md:h-[70vh] flex items-center justify-center p-8">
+                    <div class="">
                         <div class="text-center space-y-2">
                             <h2 class="text-3xl lg:text-5xl font-bold text-white">Meet Our Brilliant Team </h2>
                             <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in
@@ -366,9 +366,9 @@
                             </p>
                         </div>
                         <div class="mt-10">
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-12">
+                            <div class="grid grid-cols-12  gap-5">
                                 <!-- member 1 -->
-                                <div>
+                                <div class="col-span-12 md:col-span-3">
                                     <img src="images/member1.png" alt="">
                                     <h5 class="text-lg text-white font-semibold">Md. Jonayed</h5>
                                     <p class="text-white">Fruits Trencherman</p>
@@ -379,7 +379,7 @@
                                     </div>
                                 </div>
                                 <!-- member 2 -->
-                                <div>
+                                <div class="col-span-12 md:col-span-3">
                                     <img src="images/member2.png" alt="">
                                     <h5 class="text-lg text-white font-semibold">Safia Chowdhury</h5>
                                     <p class="text-white text-center">Fruit Expert</p>
@@ -390,7 +390,7 @@
                                     </div>
                                 </div>
                                 <!-- member 3 -->
-                                <div>
+                                <div class="col-span-12 md:col-span-3">
                                     <img src="images/member3.png" alt="">
                                     <h5 class="text-lg text-white font-semibold"> Farhan Mashuq</h5>
                                     <p class="text-white text-center">Fruits Trencherman</p>
@@ -401,7 +401,7 @@
                                     </div>
                                 </div>
                                 <!-- member 4 -->
-                                <div>
+                                <div class="col-span-12 md:col-span-3">
                                     <img src="images/member4.png" alt="">
                                     <h5 class="text-lg text-white font-semibold">Chaity Rahman</h5>
                                     <p class="text-white text-center">Fruits Tester</p>
@@ -521,10 +521,83 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <!-- Website Overview -->
+            <div>
+                <h2 class="text-5xl font-extrabold text-center my-16">Our Website Overview</h2>
+            </div>
+            <div class="container mx-auto lg:px-24 text-center border-2">
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div class="stat-figure text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-8 h-8 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="stat-title">Total Likes</div>
+                        <div class="stat-value text-primary">25.6K</div>
+                        <div class="stat-desc">21% more than last month</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-figure text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-8 h-8 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-title">Page Views</div>
+                        <div class="stat-value text-secondary">2.6M</div>
+                        <div class="stat-desc">21% more than last month</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-figure text-secondary">
+                            <div class="avatar online">
+                                <div class="w-16 rounded-full">
+                                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-value">86%</div>
+                        <div class="stat-title">Tasks done</div>
+                        <div class="stat-desc text-secondary">31 tasks remaining</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <div class=" mt-10 p-10 bg-neutral text-center">
+            <div class="space-y-5">
+                <div class="flex items-center justify-center space-x-4">
+                    <img src="images/logo.png" alt="">
+                    <h3 class="text-2xl font-bold text-white">Fruit Heaven</h3>
+                </div>
 
+                <div class=" space-x-4 font-semibold text-white text-center">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">All Fruits</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Address</a>
+                </div>
+                <div class="flex items-center justify-center gap-10">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                    <img src="images/linkedin.png" alt="">
+                </div>
+                <h2 class="text-2xl font-bold text-white">Developed by JONAYED </h2>
+            </div>
+        </div>
     </footer>
 </body>
 
